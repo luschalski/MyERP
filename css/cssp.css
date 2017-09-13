@@ -1,0 +1,183 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background-color: #FFFFFF;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#site{
+	/* Definimos a largura da página */
+	width:100%;
+	/* Definirmos a altura da página*/
+	height:650px;
+	/* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+	/*top : posição de cima */
+	margin-top:0;
+	/* left: posição de esquerda*/
+	margin-left:auto;
+	/* bottom : posição de baixo */
+	margin-bottom:0;
+	/* right : posição de direita */
+	margin-right:auto;
+	/* Aqui definiremos a cor de fundo da página */
+
+}
+
+#header{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:50px;
+	/* Cor de fundo da div */
+	background-color:#000000;
+	color: #FFFFFF;
+	
+	}
+#conteudo{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:668px;
+	
+	
+	
+}	
+#footer{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:50px;
+	/* Cor de fundo da div */
+	background-color:#000000;
+color: #FFFFFF;
+	}
+
+#box {
+background-color: #000000;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+
+}
+
+.primeira-div {
+background-color:#000000;
+font-size:15;
+color: #FFFFFF;
+font-weight:bold;
+border: 5px solid black;
+border-radius: 5px;
+}
+
+.segunda-div {
+border-radius: 5px;
+}
+
+.terceira-div{
+background-color:#000000;
+font-size:15;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+}
+
+#boxa {
+background-color: #000000;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+font-size:20;
+margin:+7px;
+}
+#cart{
+position: absolute;
+right: 0.5%;
+}
+#config{
+position: absolute;
+right: 4%;
+}
+/* configuração das linhas */
+#tr{
+
+width: 100px;
+box-sizing: border-box;
+border:1px solid grey;
+border-radius: 5px;
+font-size: 16px;
+background-color: white;
+background-position: 10px 10px;
+padding: 8px 20px 12px 20px; 
+}
+#td{
+width: 600px;
+box-sizing: border-box;
+border:1px solid grey;
+border-radius: 5px;
+font-size: 16px;
+background-color: white;
+background-position: 10px 10px;
+padding: 10px 30px 30px 30px; 
+}
+/* checkboxes personalizadas*/
+#c1{
+    font-family: Arial, sans-serif;
+    position:relative;
+    background:#40464b;
+    height:100%;
+    padding:40px 30%;
+    margin:0;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:#f2f2f2;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+/*botão de salvar*/
+#bsave{
+background-color: #00FF00;
+border: none;
+color: white;
+padding: 12px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;	
+border-radius: 4px;
+}	
+
+/*botão de cancelar*/
+#bcancel{
+background-color: #FF0000;
+border: none;
+color: white;
+padding: 12px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;	
+border-radius: 4px;
+}	

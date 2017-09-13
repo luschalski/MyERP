@@ -1,0 +1,90 @@
+<html>
+<title>FROTA</title>
+<head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css\css.css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+		<style type="text/css">
+			body {
+				background-color: rgb(211,211,211);
+			}
+
+			.navbar-nav > li > a:hover,
+			.navbar-nav > li > a:focus {
+			    color: gray;
+			}
+
+			.navbar-nav > li > a {
+			    color: #ffffff;
+			}
+
+			label {
+				background-color: black;
+			}
+
+			.button:hover, .button:focus {
+				color: #ffffff;
+			}
+
+			.button {
+				border-color: black; 
+				background-color: black;
+				color: #ffffff;
+			}
+
+		</style>
+
+</head>
+<body>
+<div id="site">
+<div id="header">
+<table>
+<tr>
+<td align="left" id="hom">
+<form action="index.html" method="post"> <input type="submit" value="Home" id="boxa"></form></td> 
+
+<td align="left"> 
+<form action="cadastro.html" method="post"> <input type="submit" value="Cadastro" id="boxa"></form></td>
+
+<td id="config"> <form action="config.html" method="post"><input type="submit" value="Configurações" id="boxa"></form></td> 
+
+
+<td id="cart"><img src="img/carta.jpg"  id="boxa"></td>
+</tr>
+</table>
+</div>
+<br><br><br><br>
+
+	<div class="container">
+			<form  align="center" method="POST" action="dadosindex.php">
+				<div class="col-md-offset-5 col-md-2">
+					<label class ="primeira-div" for="idPlaca" class="label">Placa</label><br>
+					<input type="text" id="idPlaca" name="inputPlaca" class="form-control" maxlength="8" required autofocus><br /><br />
+
+					<label class ="primeira-div" for="idModelo" class="label">Modelo</label><br>
+					<input type="text" id="idModelo" name="inputModelo" class="form-control" required><br><br>
+
+					<label class ="primeira-div" for="idChassi" class="label">Chassi</label><br>
+					<input type="text" id="idChassi" name="inputChassi" class="form-control" minlength="17" maxlength="17" required><br /><br />
+
+					<label class ="primeira-div" for="idTipo" class="label">Tipo</label><br>
+					 <?php if(isset($_POST['inputTipo'])) { ?>
+					<select class="form-control" name="inputTipo" id="idTipo" required>
+						<option value="">Escolha um tipo</option>
+						<option value="Carro" <?php echo $inputTipo ['inputTipo'] == 'Carro' ? ' selected="selected"' : ''; ?> Carro</option>
+						<option value="Moto" <?php echo $inputTipo ['inputTipo'] == 'Moto' ? ' selected="selected"' : ''; ?> Moto</option>
+						<option value="Caminhonete" <?php echo $inputTipo ['inputTipo'] == 'Caminhonete' ? ' selected="selected"' : ''; ?> Caminhonete</option>
+						<option value="Picape" <?php echo $inputTipo ['inputTipo'] == 'Picape' ? ' selected="selected"' : ''; ?> Picape</option>
+					</select><br><br>
+					<button class="btn button" type="submit">Cadastrar</button><br><br>
+					<button class="btn button">Cancelar</button>
+					<br><br><br><br><br><br>
+				</div>
+			</form>
+</div>
+<div id="footer" align="center"> © Copyright DIREITOS RESERVADOS AO GRUPO GIT-UNI - 2017</div>
+</div>
+</body>
+</html>

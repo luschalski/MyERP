@@ -1,0 +1,175 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background-color: #FFFFFF;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#site{
+	/* Definimos a largura da página */
+	width:100%;
+	/* Definirmos a altura da página*/
+	height:650px;
+	/* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+	/*top : posição de cima */
+	margin-top:0;
+	/* left: posição de esquerda*/
+	margin-left:auto;
+	/* bottom : posição de baixo */
+	margin-bottom:0;
+	/* right : posição de direita */
+	margin-right:auto;
+	/* Aqui definiremos a cor de fundo da página */
+
+}
+
+#header{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:50px;
+	/* Cor de fundo da div */
+	background-color:#000000;
+	color: #FFFFFF;
+	
+	}
+#conteudo{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:668px;
+	
+	
+	
+}	
+#footer{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:50px;
+	/* Cor de fundo da div */
+	background-color:#000000;
+color: #FFFFFF;
+	}
+
+#box {
+background-color: #000000;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+
+}
+
+.primeira-div {
+background-color:#000000;
+font-size:15;
+color: #FFFFFF;
+font-weight:bold;
+border: 5px solid black;
+border-radius: 5px;
+}
+
+.segunda-div {
+border-radius: 5px;
+}
+
+.terceira-div{
+background-color:#000000;
+font-size:15;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+}
+
+#boxa {
+background-color: #000000;
+color: #FFFFFF;
+border: 5px solid black;
+border-radius: 5px;
+font-size:20;
+margin:+7px;
+}
+#cart{
+position: absolute;
+right: 0.5%;
+}
+#config{
+position: absolute;
+right: 4%;
+}
+#tr{
+
+border: 1px solid black;	
+}
+	
+/* mostra a tabela de usuários */
+#display{	
+
+position: center;
+width: 80%
+
+}	
+/*divisas da tabela:*/
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+
+
+/* definições da barra de pesquisa*/
+input[type=text]{	
+width: 100px;
+box-sizing: border-box;
+border:1px solid grey;
+border-radius: 4px;
+font-size: 16px;
+background-color: white;
+background-position: 10px 10px;
+background-repeat: no-repeat;
+background-image:url('searchicon.jpeg'); 
+padding: 8px 20px 12px 20px; 
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}	
+
+input[type=text]:focus {
+width: 100%;
+}
+/* Botão de pesquisa*/
+.button {
+background-color: #000000;
+border: none;
+color: white;
+padding: 12px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;	
+border-radius: 4px;
+}
+/*Linha de divisa barra de pesquisa x tabela */
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #708090; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #708090; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+/*
+
+espaço entre as células(Cellspacing) 
+espaço dentro da célula (Cellpadding)>*/

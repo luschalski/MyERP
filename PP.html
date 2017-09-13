@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Perfil e permissões</title>
+<head>
+<?php
+include("conexao.php");
+?>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css\cssp.css"/>
+</head>
+<body>
+<div id="site">
+<div id="header">
+<table>
+<tr>
+<td align="left" id="hom">
+<form action="index.html" method="post"> <input type="submit" value="Home" id="boxa"></form></td> 
+
+<td align="left"> 
+<form action="cadastro.html" method="post"> <input type="submit" value="Cadastro" id="boxa"></form></td>
+
+<td id="config"> <form action="config.html" method="post"><input type="submit" value="Configurações" id="boxa"></form></td> 
+
+<td id="cart"><img src="img/carta.jpg"  id="boxa"></td>
+</tr>
+</table>
+</divo><br><br>
+<div id="conteudo" align="left">
+
+<table cellspacing="10">
+<tr>
+<td><b>Nome</b></td>
+</tr>
+<tr id="tr">
+<td id="td"> </td>
+</tr>
+	<tr>
+	<td><b>Posição</b></td>
+	</tr>
+	<tr id="tr">
+	<td id="td"> </td>
+	</tr>
+		<tr>
+		<td><b>Departamento</b></td>
+		</tr>
+		<tr id="tr">
+		<td id="td"> </td>
+		</tr>
+			<tr>
+			<td><b>Telefone</b></td>
+			</tr>
+			<tr id="tr">
+			<td id="td"> </td>
+			</tr>
+				<tr>
+				<td><b>Email</b></td>
+				</tr>
+				<tr id="tr">
+				<td id="td"> </td>
+				</tr>
+					<tr>
+					<td><b>Skype</b></td>
+					</tr>
+					<tr id="tr">
+					<td id="td"> </td>
+					</tr>
+					</table><br><br>
+
+<h1 align="center"><b>Permissões</b></h1>
+
+
+<table>
+<tr>	
+<td><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label>Edição de cadastros</td>
+</tr>
+	<tr>	
+	<td><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label>Exclusão de cadastros</td>
+	</tr>
+		<tr>	
+		<td><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label>Garantir permissões a outros usuários</td>
+		</tr>
+			<tr>	
+			<td><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label>Notificações com som</td>
+			</tr>
+				<tr>	
+				<td><input type="checkbox" id="c1" name="cc" /><label for="c1"><span></span></label>Pedidos de manutenção</td>
+				</tr>
+			
+</table><br><br>
+<table cellspacing="10">
+<tr>
+<td><button id="bsave">Salvar alterações</button></td>
+<td><button id="bcancel">Cancelar</button></td>
+</tr>
+
+</table>
+</div>
+<br><br><br><br><br><br><br><br> 
+<div id="footer" align="center"> © Copyright DIREITOS RESERVADOS AO GRUPO GIT-UNI - 2017</div>
+</div>
+</body>
+</html>

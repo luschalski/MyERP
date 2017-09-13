@@ -1,0 +1,104 @@
+<html>
+<title>FROTA</title>
+<head>
+<?php
+include("conexao.php");
+?>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css\css.css"/>
+</head>
+<body>
+<div id="site">
+<div id="header">
+<table>
+<tr>
+<td align="left" id="hom">
+<form action="index.html" method="post"> <input type="submit" value="Home" id="boxa"></form></td> 
+
+<td align="left"> 
+<form action="cadastro.html" method="post"> <input type="submit" value="Cadastro" id="boxa"></form></td>
+
+<td id="config"> <form action="config.html" method="post"><input type="submit" value="Configurações" id="boxa"></form></td> 
+<td id="cart"> <img src="img/carta.jpg"  id="boxa"></td>
+</tr>
+</table>
+</div>
+<div align="center" id="conteudo">
+<table cellspacing="10"><tr></tr><tr></tr> <tr><tr></tr><tr></tr>
+
+      <td class ="primeira-div" style="width: 130px " align = "center">PLACA</td>
+	  <td><input type="text" name="inputPlaca" placeholder="AAA-0000" class ="segunda-div"></td>  
+	  
+	  <td class ="primeira-div" style="width: 130px " align = "center">MODELO</td>
+	  <td><input type="text" name="inputModelo" placeholder="ASTRA" class ="segunda-div"></td>
+	  
+	  <form>
+  <td>
+	<select class="terceira-div" name="inputTipo" style="width: 125px">
+	<option value="">TIPO</option>
+    <option value="carro">Carro</option>
+	<option value="moto">Moto</option>
+    <option value="Caminhonete">Caminhonete</option>
+	<option value="picape">Picape</option>
+  </select>
+   </td>
+  </form>		  
+	  <td class ="primeira-div"style="width: 130px " align = "center">CHASSI</td>
+	  <td><input type="text" name="inputChassi" placeholder="9BG116GW04C400001" class ="segunda-div" ></td>	    
+	   <td> <input type="submit" name="botao" value="BUSCAR" id="box" style="width: 100px " align = "center"></td>
+	   <td> <input type="submit" value="Incluir" id="box" style="width: 100px " align = "center"></td>
+	  </tr>
+	  <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+<tr> 
+<body>
+<h1> LISTAGEM DE DADOS </h1>
+<table width="75%" border="1" align="center">
+  <tr bgcolor="#9999FF">
+    <td width="15%">PLACA</td>
+    <td width="15%">MODELO</td>
+    <td width="15%">TIPO</td>
+    <td width="15%">CHASSI</td>
+	<td width="12%">EDITAR</td>
+	<td width="12%">EXCLUIR</td>
+  </tr>
+<?php
+
+  $sql= "select * from veiculo";
+ 
+  $resultado = msql_query($sql,$conexao);  
+  
+  while ($dados = mysql_fetch_array($resultado)){
+  $Placa =$dados['inputPlaca'];
+  $Modelo =$dados['inputModelo'];
+  $Tipo =$dados['inputTipo'];
+  $Chassi =$dados['inputChassi'];
+  
+  
+  echo "<tr>
+      <td>$Placa</td>
+      <td>$Modelo</td>
+	  <td>$Tipo</td>
+      <td>$Chassi</td>
+	  <td align="center">        
+		<a href=""> <img src="img/editar.png"></a></td>
+	  <td align="center">
+		<a href=""> <img src="img/lixeira.png"></a></td>
+	  </tr>";
+ }
+  
+?>
+    
+</table>
+
+</body>
+
+</tr>
+</div>
+</table>  
+</div>
+<div id="footer" align="center"> © Copyright DIREITOS RESERVADOS AO GRUPO GIT-UNI - 2017</div>
+</div>
+</body>
+</html>
