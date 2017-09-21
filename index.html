@@ -1,9 +1,13 @@
+<?php
+include_once ("conexao.php");
+$result = "SELECT *FROM veiculo";
+$result = mysqli_query ($conn,$result);
+
+?>
+
 <html>
 <title>FROTA</title>
 <head>
-<?php
-include("conexao.php");
-?>
 <meta http-equiv="Content-Language" content="pt-br">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css\css.css"/>
@@ -65,30 +69,24 @@ include("conexao.php");
   </tr>
 <?php
 
-  $sql= "select * from veiculo";
  
-  $resultado = msql_query($sql,$conexao);  
-  
-  while ($dados = mysql_fetch_array($resultado)){
+  while ($dados = mysql_fetch_array($result)){
   $Placa =$dados['inputPlaca'];
   $Modelo =$dados['inputModelo'];
   $Tipo =$dados['inputTipo'];
-  $Chassi =$dados['inputChassi'];
+  $Chassi =$dados['inputChassi'];?>
   
-  
-  echo "<tr>
-      <td>$Placa</td>
-      <td>$Modelo</td>
-	  <td>$Tipo</td>
-      <td>$Chassi</td>
+  <tr>
+      <td><?php echo $dados ['inputPlaca'];?></td>
+      <td><?php echo $dados ['inputModelo'];?></td>
+	  <td><?php echo $dados ['inputTipo'];?></td>
+      <td><?php echo $dados ['inputChassi'];?></td>
 	  <td align="center">        
 		<a href=""> <img src="img/editar.png"></a></td>
 	  <td align="center">
 		<a href=""> <img src="img/lixeira.png"></a></td>
-	  </tr>";
- }
-  
-?>
+	  </tr> 	  
+
     
 </table>
 
